@@ -4,8 +4,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{sprite}
-  s.version = "0.1.7"
+  s.name = %q{sprite-mpf}
+  s.version = "0.1.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jacques Crocker"]
@@ -33,6 +33,7 @@ Gem::Specification.new do |s|
      "lib/sprite/styles/sass_generator.rb",
      "lib/sprite/styles/sass_mixin_generator.rb",
      "lib/sprite/styles/sass_yml_generator.rb",
+     "lib/sprite/styles/sass_mixin_new_generator.rb",
      "rails/init.rb",
      "sprite.gemspec",
      "tasks/sprite_tasks.rake"
