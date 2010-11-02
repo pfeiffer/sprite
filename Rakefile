@@ -11,11 +11,11 @@ require 'jeweler'
 #end
 
 Jeweler::Tasks.new do |gemspec|
-  gemspec.name = "mpf-sprite"
+  gemspec.name = "sprite"
   gemspec.summary = "generate your css sprites automagically"
   gemspec.description = "sprite is a rails/merb plugin that generates sprites for css, sass"
-  gemspec.email = "mattias@pfeiffer.dk"
-  gemspec.authors = ["Jacques Crocker", "mpf"]
+  gemspec.email = "merbjedi@gmail.com"
+  gemspec.authors = ["Jacques Crocker"]
   gemspec.files.exclude '.gitignore'
   
   # removing test files and specs from the gem to save space
