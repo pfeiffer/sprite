@@ -11,7 +11,7 @@ module Sprite
         File.open(File.join(Sprite.root, path), 'w') do |f|
           add_else = false
 
-          f.puts "@mixin sprite($group_name, $image_name, $offset=0, $include_dimensions=true, $override_offset = false) {"
+          f.puts "@mixin sprite($group_name, $image_name, $offset: 0, $include_dimensions: true, $override_offset: false) {"
           sprite_files.each do |sprite_file, sprites|
             sprites.each do |sprite|
               f << "  @"
