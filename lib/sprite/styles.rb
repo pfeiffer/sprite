@@ -12,7 +12,7 @@ module Sprite::Styles
     "sass_mixin" => "SassMixinGenerator",
     "sass_yml" => "SassYmlGenerator",
     "sass_mixin_new" => "SassMixinNewGenerator",
-    "sass_compass_generator" => "SassCompassGenerator"
+    "sass_compass" => "SassCompassGenerator"
   }
   
   def self.get(config)
