@@ -29,8 +29,10 @@ module Sprite
                 background_offset_override  = "$override_offset \#{#{sprite[:y]}+$offset}px"
               end
               
+              image_path = "#{@builder.config['image_output_path']}#{sprite_file}".gsub(%r(^images/), '')
+              
               f.puts "if $group_name == \"#{sprite[:group]}\" and $image_name == \"#{sprite[:name]}\" {"
-              f.puts "    background: image-url('/#{@builder.config['image_output_path']}#{sprite_file}') no-repeat #{background_offset};"
+              f.puts "    background: image-url('#{image_path}') no-repeat #{background_offset};"
               f.puts "    @if($include_dimensions) {"
               f.puts "      width: #{sprite[:width]}px;"
               f.puts "      height: #{sprite[:height]}px;"
