@@ -3,6 +3,7 @@ require 'sprite/styles/css_generator'
 require 'sprite/styles/sass_yml_generator'
 require 'sprite/styles/sass_mixin_generator'
 require 'sprite/styles/sass_mixin_new_generator'
+require 'sprite/styles/sass_compass_generator'
 
 module Sprite::Styles
   GENERATORS = {
@@ -10,7 +11,8 @@ module Sprite::Styles
     "sass" => "SassGenerator",
     "sass_mixin" => "SassMixinGenerator",
     "sass_yml" => "SassYmlGenerator",
-    "sass_mixin_new" => "SassMixinNewGenerator"
+    "sass_mixin_new" => "SassMixinNewGenerator",
+    "sass_compass_generator" => "SassCompassGenerator"
   }
   
   def self.get(config)
